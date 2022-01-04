@@ -1,15 +1,20 @@
-import mlblogo from './mlb-logo.svg';
+import theme from './theme/theme';
 import './App.css';
 import { Home } from './components/pages/Home';
+import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './router/Router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={mlblogo} className="App-logo" alt="logo" />
-        <Home />
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <BrowserRouter>
+        <div className="App">
+          <Router />
+          <Home />          
+        </div>
+        </BrowserRouter>
+    </ChakraProvider>
   );
 }
 
