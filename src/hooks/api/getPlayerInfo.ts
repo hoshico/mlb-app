@@ -3,6 +3,6 @@ type Props = {
   name: string;
 };
 
-export const getPlyaerInfo = (name: Props) => {
+export const getPlayerInfo = (name: Props) => {
   
 }
