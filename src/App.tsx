@@ -1,6 +1,6 @@
 import theme from './theme/theme';
 import './App.css';
-import { Home } from './components/pages/Home';
+import { Main } from './components/pages/Main';
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './router/Router';
@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <Router />
-          <Home />          
+          <Main />          
         </div>
         </BrowserRouter>
     </ChakraProvider>

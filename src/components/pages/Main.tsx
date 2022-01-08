@@ -3,7 +3,7 @@ import { ChangeEvent, useEffect, useState } from "react"
 import axios from "axios"
 
 
-export const Home = () => {
+export const Main = () => {
     const [playerName, setPlayerName] = useState("");
     const onChangePlayerName = (e :ChangeEvent<HTMLInputElement>) => {
         setPlayerName(e.target.value);
